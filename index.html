@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./p5/p5.min.js"></script>
+  <script src="./p5/p5.dom.min.js"></script>
+  <script src="./p5/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="nokia">
+      <h2>Nokia</h2>
+    </div>
+    <div id="sketch-holder"></div>
+    <div class="teclado">
+      <div class="grupo-btn">
+        <button class="btn btn-secondary">1<small>o_o</small></button>
+        <button onclick="moveUp()" id="btn-cima" class="btn btn-secondary">2<small>abc</small></button>
+        <button class="btn btn-secondary">3<small>def</small></button>
+      </div>
+      <div class="grupo-btn">
+        <button onclick="moveLeft()" id="btn-esquerda" class="btn btn-secondary">4<small>ghi</small></button>
+        <button class="btn btn-secondary">5<small>jkl</small></button>
+        <button onclick="moveRight()" id="btn-direita" class="btn btn-secondary">6<small>mno</small></button>
+      </div>
+      <div class="grupo-btn">
+        <button class="btn btn-secondary">7<small>pqrs</small></button>
+        <button onclick="moveDown()" id="btn-baixo" class="btn btn-secondary">8<small>tuv</small></button>
+        <button class="btn btn-secondary">9<small>wxyz</small></button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="sketch.js"></script>
+  <script src="snake.js"></script>
+</body>
+
+</html>

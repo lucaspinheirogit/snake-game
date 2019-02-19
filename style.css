@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url(gray-bg.png) no-repeat 100% 100%;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  outline: 1px solid #000;
+}
+
+h2{
+  margin: 0;
+  color: #FFF;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sketch-holder{
+  box-shadow: 0px 3px 1px 1px #000;
+  border: 20px solid #3F4052;
+}
+
+.nokia, .teclado{
+  width: 640px;
+margin: 0 auto;
+background-color: #3F4052;
+box-shadow: 0px 0px 1px 1px #000;
+}
+
+.nokia{
+  text-align: center;
+  padding: 2em;
+  padding-top: 4em;
+  padding-bottom: 0em;
+  border-top-right-radius: 10em;
+  border-top-left-radius: 10em;
+}
+
+.teclado{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  border-bottom: 12px solid #2d2d3a;
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 5em;
+  box-shadow: 0px 2px 1px 1px #000;
+}
+
+.grupo-btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+}
+
+.grupo-btn button{
+  border-radius: 3em;
+  font-size: 2em;
+  padding: 1em 2em;
+  box-shadow: 0 0 20px 2px #000;
+}
+
+.teclado button:first-child{
+  border-top-left-radius: .5em;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: .5em;
+  border-bottom-left-radius: 3em;
+}
+.teclado button:last-child{
+  border-top-left-radius: 3em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: .5em;
+}
+
+small{
+  font-size: 50%;
+  color: #777;
+  margin-left: 2px;
+}
+
+.btn-secondary:focus, .btn-secondary.focus, .btn_pressed {
+  color: rgb(82, 17, 17);
+  box-shadow: 0 0 20px 2px rgb(82, 17, 17) !important;
+}
